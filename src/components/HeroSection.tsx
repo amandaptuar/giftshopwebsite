@@ -6,7 +6,7 @@ import heroImg from "@/assets/hero-gifts.jpg";
 const HeroSection = () => (
   <section className="relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden">
     <div className="absolute inset-0">
-      <img src={heroImg} alt="Personalized gifts collection" className="w-full h-full object-cover animate-[scaleIn_20s_ease-out_forwards]" width={1920} height={1080} />
+      <img src={heroImg} alt="Personalized gifts collection" className="w-full h-full object-cover" width={1920} height={1080} />
     </div>
     
     {/* Dark overlay for contrast */}
@@ -18,7 +18,7 @@ const HeroSection = () => (
     {/* Darker top gradient to ensure Navbar visibility when transparent */}
     <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-black/60 to-transparent" />
 
-    <div className="container mx-auto px-4 relative z-10 text-center py-32 space-y-8" style={{ animation: "fadeInUp 0.8s ease-out" }}>
+    <div className="container mx-auto px-4 relative z-10 text-center py-32 space-y-8">
       <span className="inline-block px-6 py-2 rounded-full bg-white/10 backdrop-blur-md text-white font-body text-sm font-semibold border border-white/20 shadow-[0_0_15px_rgba(255,255,255,0.15)] hover:bg-white/20 transition-colors">
         ✨ Handcrafted with Love
       </span>
